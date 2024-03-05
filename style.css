@@ -34,7 +34,7 @@ body {
 .flexkaroon {
   display: flex;
   margin-top: 5vw;
-  align-items:center ;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -133,7 +133,6 @@ button {
     padding: 15px;
     text-align: left;
     width: 45%;
-   
 
     & svg {
       margin-bottom: 40px;
@@ -221,13 +220,68 @@ button {
   display: flex;
   justify-content: space-between;
 }
-#city{
-font-size: 40px;
+#city {
+  font-size: 40px;
   text-transform: capitalize;
   color: white;
 }
-#temp, #deg{
+#temp,
+#deg {
   position: relative;
   bottom: 10px;
+}
+#inputval{
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 50vw;
+
+}
+#btnjarori{
+  position: relative;
+    top: -44px;
+    left: 411px;
+
+}
+#divno{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+}
+.dabba{
+  background-color: white;
+  width: 50vw;
+  height: 216px;
+  position: relative;
+  border-radius: 25px;
+  bottom: 37px;
+  overflow: hidden;
+  overflow-y: scroll;
   
+  
+  display: none;
+}
+.name{
+  list-style: none;
+  margin-bottom: 7px;
+  padding-top: 15px;
+  position: relative;
+  right: 24px;
+  cursor: pointer;
+}
+.name:hover{
+  background: rgb(197, 193, 193);
+}
+@media screen and (max-width: 450px) {
+  #navbar1 {
+    display: none;
+  }
+  .chotainput,.chothabtn {
+    display: block;
+  }
+  #btnjarori{
+    left: 147px;
+  }
 }
